@@ -10,4 +10,4 @@
 	
 # Projeye SASS Dahil Etme
 	
-	Ardından projede kullanmak üzere en jenerik Front-End Framework olan Bootstrap projeye dahil edildi.
+	Projede kullanmak üzere en jenerik Front-End Framework olan Bootstrap projeye dahil edildi.
