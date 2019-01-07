@@ -8,8 +8,8 @@
 	include "vendor/autoload.php";
 	# c. Create FB Object via paramters
 	$fb = new Facebook\Facebook([
-		  'app_id' => '2260546047502821', // Replace {app-id} with your app id
-		  'app_secret' => 'e0d432fcf347eaacf8f32a36858a4d0c',
+		  'app_id' => 'app-id', // Replace {app-id} with your app id
+		  'app_secret' => 'secret',
 		  'default_graph_version' => 'v2.2',
 		  ]);
 
@@ -66,7 +66,7 @@
 			echo $userNode->getId() . "<br>";
 			echo $userNode->getEmail() . "<br>";
 
-			$img_url = "https://graph.facebook.com/" . $userNode->getId() ."/picture?width=400";
+			$img_url = "https://graph.facebook.com/" . $userNode->getId() ."/picture?width=200";
 			echo "<img src='$img_url'/>";
 		}
 
