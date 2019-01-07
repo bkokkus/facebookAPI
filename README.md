@@ -31,4 +31,6 @@
 	Daha sonra buradan sayfayı biraz aşağıya kaydırarak altta bize sunulan "add platform" seçeneğini tıklıyoruz.
 	Karşımıza çıkan pencerede bize uygun uygulamanın ikonuna tıklıyoruz. 
 	Biz web üzerinden çalışacağımız için "Website" ikonuna tıklıyoruz. 
-	Ardından bize çıkan bir input olacak buraya ben local de çalıştığım için localhost ta proje klasörümün çalıştığı yolu ( dizin - path ) belirtiyorum.	
+	Ardından bize çıkan bir input olacak.
+	Buraya ben local de çalıştığım için localhost ta bulunan;
+	Proje klasörümün çalıştığı yolu ( dizin - path ) belirtiyorum.	
