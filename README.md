@@ -1,8 +1,8 @@
-# facebook API - php
+# facebook SDK - php
 
-	PHP Facebook API ile bağlanma ve kullanıcı bilgisi edinme.
+	PHP Facebook SDK ile bağlanma ve kullanıcı bilgisi edinme.
 
-# Facebook API Dahil Etme
+# Facebook SDK Dahil Etme
 	
 	İlk Önce Facebook apisi projeye dahil ediyoruz.
 	Kullandığımız API Facebook 'un graph api 'sidir.
@@ -33,4 +33,29 @@
 	Biz web üzerinden çalışacağımız için "Website" ikonuna tıklıyoruz. 
 	Ardından bize çıkan bir input olacak.
 	Buraya ben local de çalıştığım için localhost ta bulunan;
-	Proje klasörümün çalıştığı yolu ( dizin - path ) belirtiyorum.	
+	Proje klasörümün çalıştığı yolu ( dizin - path ) belirtiyorum.
+	Son adım olarak kaydediyorum. Artık proje ile ilgili tanımlamalarım gerçekleştirildi.
+
+	Konu ile ilgili örnekleri incelemek için ; 
+
+	https://developers.facebook.com/docs
+	https://developers.facebook.com/docs/reference/php
+	https://developers.facebook.com/docs/php/howto/example_facebook_login	
+
+# INDEX Dosyası
+
+	İlk önce session başlattık.
+	Facebook objesi oluşturduk. (Documentta gösteriyor.)
+	Kendimize bir dönüş url (redirect) belirledik. 
+		* Login olduğunda ve olmadığında nereye yönlendirilecek.
+	Eğer login butununa basarsak. Bir accessToken dönüyor. Eğer dönmezse login işlemine geri dönüyor.
+
+	Bir helper değişkeni oluşturduk. Bütün login işlemlerimizin içinde olacağı değişken.
+
+	accessToken varsa istediğimiz bilgileri almış olduk.
+	Yoksa ekrana bir login butonu koyduk.
+
+	SKD 'nın kendisi ile alakalı olarak state kısmından bir hata alıyorduk.
+	Onuda bir SESSION ataması ile giderdik. İlgili açıklama satırını belirttik.
+
+	
