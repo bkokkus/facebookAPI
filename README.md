@@ -2,6 +2,15 @@
 
 	PHP Facebook SDK ile bağlanma ve kullanıcı bilgisi edinme.
 
+# Kullanımı 
+
+	Eğer projeyi bu şekilde çalıştırmak ve kullanmak isterseniz. 
+	fb_config dosyasının içerisinde bulunan "app-id" ve "secret" alanlarını doldurmalısınız. 
+	Bu bilgileri nereden alabileceğiz ise ;
+		Aşağıda "Facebook Üzerinden Uygulama Oluşturma" kısmında anlatılmıştır.
+
+	iyi günler & çalışmalar .. 
+
 # Facebook SDK Dahil Etme
 	
 	İlk Önce Facebook apisi projeye dahil ediyoruz.
@@ -42,7 +51,7 @@
 	https://developers.facebook.com/docs/reference/php
 	https://developers.facebook.com/docs/php/howto/example_facebook_login	
 
-# INDEX Dosyası
+# fb_config Dosyası
 
 	İlk önce session başlattık.
 	Facebook objesi oluşturduk. (Documentta gösteriyor.)
@@ -57,5 +66,23 @@
 
 	SKD 'nın kendisi ile alakalı olarak state kısmından bir hata alıyorduk.
 	Onuda bir SESSION ataması ile giderdik. İlgili açıklama satırını belirttik.
+
+	İstediğimiz email , name , id ve profil fotoğrafı bilgilerini bir dizi içerisine tanımladık.
+	Bu diziyi bir SESSION tanımına eşitledik. 
+
+	Son olarak sayfamızı homepage.php sayfasına yönledirdik.
+
+# INDEX Dosyası
+
+	Login sayfası mantığı ile giriş butonumuzu burada oluşturduk. 
+	fb_config dosyamızı buraya include ettik.
+	Eğer oturum başlamazsa veya facebook üzerinden veriler alınamazsa; 
+		Sistemin bizi giriş yapmaya zorlamak amacıyla yönlendireceği sayfa.
+
+# HOMEPAGE Dosyası
+
+	Bu sayfa da aldığımız ve SESSION atadığımız kullanıcı bilgilerini istediğimiz gibi kullanıyoruz.
+	Aynı zamanda oturumu sonlandırmak için bir link belirtiyoruz. 
+	
 
 	
